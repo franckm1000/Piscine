@@ -14,7 +14,7 @@
 <meta name="Keywords" content="piscine, construire sa piscine, construction d'une piscine, acheter une piscine, acheter piscine, comment construire une piscine, comment faire une piscine, piscine carrelage, piscine bloc poly, construire une piscine, piscine, coque piscine, coque" />
 </head>
 
-<body><!-- ad6média -->
+<body><!-- ad6mï¿½dia -->
 <script type="text/javascript">
 /* <![CDATA[ */
 var ad6_url = 'http://zonezu2fku.s.ad6media.fr/?d='+((new Date()).getTime())+'&r='; try { ad6_url+=escape(top.document.referrer); } catch (e) {ad6_url+=escape(document.referrer);} document.write('<scr'+'ipt typ'+'e="text/javas'+'cript" src="'+ad6_url+'"></scr'+'ipt>');
@@ -31,7 +31,7 @@ var ad6_url = 'http://fwl1ez5vbf.s.ad6media.fr/?d='+((new Date()).getTime())+'&r
 <div class="bloc_header_1">&nbsp;
 		  <?php include('header.php'); ?>
 	  </div>
-      
+      test
 
 		<div class="new_head">
         <div class="devis2">
@@ -67,7 +67,7 @@ var ad6_url = 'http://fwl1ez5vbf.s.ad6media.fr/?d='+((new Date()).getTime())+'&r
 <p align="left" class="style1">TOTAL Gros &OElig;uvre = <span style="color: red;">5052,90&euro;</span></p>
 <p class="centre"><script type="text/javascript"><!--
 google_ad_client = "pub-3528084363897880";
-/* 728x90, date de création 01/09/10 */
+/* 728x90, date de crï¿½ation 01/09/10 */
 google_ad_slot = "9478771302";
 google_ad_width = 728;
 google_ad_height = 90;
@@ -118,7 +118,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <h1><b><u>TOTAL PISCINE = 12 179,65&euro;</u></b></h1><div class="float_gauche">
 <script type="text/javascript"><!--
 google_ad_client = "pub-3528084363897880";
-/* 300x250, date de création 11/07/08 */
+/* 300x250, date de crï¿½ation 11/07/08 */
 google_ad_slot = "9532006434";
 google_ad_width = 300;
 google_ad_height = 250;
