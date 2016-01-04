@@ -1,0 +1,292 @@
+/* General */
+
+* { margin:0px; padding:0px; }
+
+body {
+	text-align:center;
+	background:url(images/fond-site.png) repeat-x #065583;
+	margin-bottom:10px;
+}
+
+#page {
+	width:820px;
+	text-align:left;
+	border: medium groove #999999;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+a {
+	color:#000000;
+	text-decoration:underline;
+}
+
+a:hover {
+	color:#0066CC;
+	text-decoration:underline;
+}
+
+a img {
+	border:none;
+}
+
+p.centrer {
+	text-align:center;
+}
+
+/* Header */
+
+#header {
+	width:820px;
+	height:92px;
+	background:url(images/header2.png) no-repeat;
+	font:bold 10px Verdana, Arial, Helvetica, sans-serif;
+}
+
+#header a {
+	color:#c3e2f6;
+	text-decoration:none;
+}
+
+#header a:hover {
+	color:#c3e2f6;
+	text-decoration:underline;
+}
+
+#header ul {
+	list-style-type:none;
+	padding:41px 0px 0px 0px;
+}
+
+#header li#lien1 {
+	display:inline;
+	margin-left:336px;
+}
+
+#header li#lien2 {
+	display:inline;
+	margin-left:41px;
+}
+
+#header li#lien3 {
+	display:inline;
+	margin-left:47px;
+}
+
+#header li#lien4 {
+	display:inline;
+	margin-left:68px;
+}
+
+/* Corps */
+
+#corps {
+	width:760px;
+	overflow:auto;
+	margin-bottom:10px;
+}
+
+/* Barre login */
+
+#barre-login {
+	width:748px;
+	height:23px;
+	background:url(images/barre-login.png) no-repeat;	
+	font:11px Tahoma, Arial, Helvetica, sans-serif;
+	margin-bottom:3px;
+}
+
+#barre-login a {
+	color:#000000;
+	text-decoration:none;	
+}
+
+#barre-login a:hover {
+	color:#000000;
+	text-decoration:underline;		
+}
+
+#barre-login p {
+	padding:2px 12px 0px 12px;	
+}
+
+#barre-login img {
+	vertical-align:top;
+}
+
+.champ-barre-login {
+	background-color:#eeeeee;
+	border-top:solid 1px #a19f9f;
+	border-right:solid 1px #a19f9f;
+	border-bottom:solid 1px #a19f9f;
+	border-left:solid 2px #a40000;
+	font:12px Tahoma, Arial, Helvetica, sans-serif;	 
+}
+
+.bouton-barre-login {
+	background-color:#eeeeee;
+	border:solid 1px #a19f9f;	
+	font:11px Tahoma, Arial, Helvetica, sans-serif;	
+}
+
+.droite {
+	margin-top:2px;
+	float:right;
+}
+
+/* Menu */
+
+#menu {
+	margin-top:4px;
+	width:175px;
+	font:10px Verdana, Arial, Helvetica, sans-serif;
+	float:left;
+	display:inline;
+}
+
+#menu a {
+	text-decoration:none;
+	color:#043e86;		
+}
+
+#menu a:hover {
+	text-decoration:underline;
+	color:#043e86;		
+}
+
+#menu ul {
+	list-style-type:none;
+	list-style-image:url(images/puce-menu.gif);
+	margin-left:30px;
+	color:#043e86;
+	font-weight:bold;	
+}
+
+#menu li {
+	padding:2px 0px 2px 0px;
+}
+
+#menu p {
+	margin-left:10px;
+}
+
+#menu label {
+	color:#333333;
+}
+
+#menu input {
+	background-color:#eeeeee;
+	border-top:solid 1px #a19f9f;
+	border-right:solid 1px #a19f9f;
+	border-bottom:solid 1px #a19f9f;
+	border-left:solid 2px #a40000;
+	font:12px Tahoma, Arial, Helvetica, sans-serif;	
+}
+
+.menu-titre {
+	width:173px;
+	height:27px;
+	background:url(images/menu-titre.gif) no-repeat;
+}
+
+.menu-titre h3 {
+	font:bold 12px Verdana, Arial, Helvetica, sans-serif;
+	color:#636363;
+	text-align:center;
+	padding-top:13px;
+}
+
+.menu-fond {
+	width:173px;
+	background:url(images/menu-fond.gif) repeat-y;
+	padding-top:2px;
+}
+
+.menu-bas {
+	width:173px;
+	height:10px;
+	background:url(images/menu-bas.gif) no-repeat;
+	font-size:1px;
+}
+
+/* Bloc general */
+
+#bloc-general {
+	float:left;
+	display:inline;	
+	width:578px;	
+	margin:4px 0px 10px 0px;	
+}
+
+/* Blocs de news */
+
+.titre-bloc {
+	height:27px;
+	width:578px;
+	background:url(images/bloc-titre.png) no-repeat;
+}
+
+.titre-bloc h2 {
+	font:bold 12px Arial, Helvetica, sans-serif;
+	color:#696969;
+	text-align:center;
+	padding-top:12px;		
+}
+
+.fond-bloc {
+	background:url(images/bloc-fond.gif) repeat-y;
+	width:578px;
+	font:11px Tahoma, Arial, Helvetica, sans-serif;
+	color:#0f59b3;
+	padding:6px 0px 2px 0px;	
+}
+
+.fond-bloc p {
+	padding:0px 9px 0px 11px;
+}
+
+.bas-bloc {
+	background:url(images/bloc-bas.png) no-repeat;
+	width:578px;
+	height:10px;
+	font-size:1px;
+}
+
+/* Footer */
+
+#footer {
+	clear:both;	
+	width:723px;
+	height:26px;
+	background:url(images/footer.png)  no-repeat;
+	margin-left:15px;	
+}
+
+#copyright {
+	width:538px;
+	margin-left:10px;
+	padding-top:7px;
+	float:left;
+	display:inline;
+	text-align:center;
+	font:10px Verdana, Arial, Helvetica, sans-serif;
+	color:#adc8dc;
+}
+
+#grafik-system {
+	width:175px;
+	float:left;
+	display:inline;
+}
+.Style1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 20px;
+	color: #CCCCCC;
+	font-style: italic;
+}
+.Style2 {
+	color: #CCCCCC;
+	font-size: 12px;
+}

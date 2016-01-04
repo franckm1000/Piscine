@@ -1,0 +1,270 @@
+/* CSS Document */
+/**sheme color : CCDAFF ( http://www.colorschemer.com/online.html ) **/
+
+body {
+	font-family:tahoma;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+}
+
+form {margin:0;}
+
+table
+{
+   
+   border-collapse: collapse; 
+   background-color:#FFFFFF;
+   margin-bottom:10px;
+   margin-top:10px;
+   margin-left:2%
+}
+ td{border : 1px solid #000099; padding : 5px;}
+
+td.ligneBlanche 
+{
+border : 1px solid #FFFFFF; padding : 5px;
+}
+
+h3 {color:#0000FF; margin-bottom:5px; margin-top:5px; text-decoration:none; text-align:center}
+h2 { color:#0000FF;margin-bottom:5px; margin-top:5px; text-decoration:none;  text-align:center; line-height:150% ;}
+h1 {color:#0000FF; margin:5px; text-decoration:none; line-height:150% ;  text-align:center;}
+
+/** ------------------------------- NOMS PERSONNALISES -------**/
+.bandeau {
+height: 60px;
+background-color: #8FADFF;
+color:#FFFFFF;
+margin-top:0;
+padding-right:10px;
+padding-top:1px;
+
+background-position:left;
+background-repeat:no-repeat;
+text-align:left;
+}
+.bandeau a {text-decoration:none; color:#FFF;}
+.bandeau a:hover {text-decoration:none; color:#FFF;}
+
+
+.centre {
+background-color:#FFFFFF;
+margin-left: 201px;
+border-top:none;
+margin-right: 201px;
+margin-bottom:15px;
+min-height:1000px;
+padding :10px;
+padding-top:0
+}
+.centre a{text-decoration:none; color:#0000FF}
+.centre a:hover{text-decoration:underline;}
+
+/** le centre pour les pages sans menu à droite **/
+.centreLarge {
+background-color:#FFFFFF;
+margin-left: 201px;
+border-top:none;
+margin-bottom:15px;
+min-height:900px;
+padding :10px;
+padding-top:0
+}
+.centreLarge a{text-decoration:none; color:#0000FF}
+.centreLarge a:hover{text-decoration:underline;}
+
+
+.conteneur {
+position: relative;
+min-width:984px;
+width: 100%;
+margin: 0 auto; 
+background-color:#FFF;
+}
+
+.copyright
+{
+border-top:1px solid #000;
+padding:5px;
+background-color:#FFE18F;
+color:#5280FF;
+
+background-repeat:repeat-x;
+background-position:top;
+}
+.copyright a
+{color:#5280FF; text-decoration:underline}
+.copyright a:hover
+{color:#5280FF; text-decoration:none}
+
+
+.espaceHaut
+{
+height:20px;
+
+background-repeat:repeat-x;
+background-color:#FFFFFF;
+}
+
+    .imageGalerie
+      {
+      width:33%;
+      float:left; 
+      text-align:center;
+      padding-bottom : 10px;
+      }
+      .imageGalerie img
+      {
+      border: 1px #999999 solid;
+      padding: 5px;
+      padding-bottom:15px;
+      }
+      
+      
+.GoogleAdsenseFlottant
+{
+float:left
+;}
+
+.menuHorizontal /** les onglets **/
+{
+border-top:1px solid #000;
+border-bottom:1px solid #000;
+background-color:#FFE18F;
+padding-bottom:5px;
+padding-top:5px; /** sinon la bordure top n'apparait pas sur IE **/
+;}
+.menuHorizontal a
+{
+background-color:#FFD152;
+color:#000;
+border-right:1px solid #000;
+padding-left:5px;
+padding-right:5px;
+padding-top:5px;
+padding-bottom:5px;
+text-decoration:none;
+font-weight:bold;
+}
+.menuHorizontal a:hover
+{
+border-right:1px solid #000;
+background-color:#F3FFCC;
+padding-left:5px;
+padding-right:5px;
+padding-top:5px;
+padding-bottom:5px;
+color:#5280FF;
+text-decoration:none;
+font-weight:bold;
+}
+
+.note
+{
+margin:10px;
+border: 2px dotted #FFD152;
+background-color:#CCFFF1;
+padding:10px;
+;}
+
+.pubScroll
+{
+width:300px;
+}
+
+.recherche
+{
+border :1px dotted #666;
+background-color:#CCFFFF;
+text-align: center;
+padding:5px;
+margin-bottom:15px;
+}
+
+/**----------------------------------- MENU GAUCHE --------------- **/
+.gauche {
+float:left;
+left:0;
+width: 200px;
+border:1px solid #000;
+border-left:none;
+border-bottom:none;
+background-color:#CCFFD8
+}
+.menu
+{
+width:200px;
+height:auto;
+}
+.menu a
+{
+	/**display:block;**/
+text-decoration:none;
+	color:0000FF;
+	display:block;
+	border-bottom:1px solid #666;
+	padding:4px;
+	font-size: 11px;
+}
+.menu a:hover 
+{
+padding:4px;
+background-color:#F3FFCC;
+color:#5280FF
+}
+
+
+.menuEspace
+{
+height:5px;
+width:200px;
+border-bottom:1px solid #000;
+background-color:#FFE18F
+;}
+
+.menuTitre
+{
+background-color:#FFE18F;
+border-bottom:1px solid #000;
+color:#5280FF;
+font-weight:bold;
+text-align:center;
+padding:5px;
+}
+/**------------------------------------ MENU DROITE ----------------**/
+
+.droite {
+position: absolute;
+right:0;
+width: 200px;
+border:1px solid #000;
+border-right:none;
+border-bottom:none;
+background-color:#CCFFD8
+}
+
+
+.menuDroite
+{
+float:right;
+width:189px;
+height:auto;
+}
+.menuDroite a
+{ 
+/**display:block;**/
+text-decoration:none; 
+color:#FFFFFF;
+display:block;
+width:185px;
+padding-left:4px;
+padding-top:3px;
+padding-bottom:3px;
+}
+.menuDroite a:hover 
+{
+/**display:block; **/
+text-decoration:none; 
+background-color:#FFFF00;
+color:#0000FF;
+}

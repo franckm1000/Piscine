@@ -1,0 +1,5 @@
+piscine_homepage:
+    path:     /{lNom}.{format}
+    defaults: { _controller: PiscineBundle:FrontPiscine:index,lNom:index,format: php }
+    requirements:
+        format: php

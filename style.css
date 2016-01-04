@@ -1,0 +1,27 @@
+body{scrollbar-3d-light-color: #ffffff;
+	scrollbar-arrow-color: #696969;
+	scrollbar-base-color: #ffffff;
+	scrollbar-dark-shadow-color: #ffffff;
+	scrollbar-face-color:  #ffffff;
+	scrollbar-highlight-color: #696969;
+	scrollbar-shadow-color: #696969;
+	
+	background-color: #ffffff;}
+	
+body,table {font-size: 11px; color: #696969; font-family : arial; ;} /*texte gris*/
+
+.bord_txt {border: #adadad 1px solid;}
+
+A.menu1:link {FONT-SIZE: 11px; COLOR: #4cb34e; text-align: CENTER; FONT-FAMILY: arial; TEXT-DECORATION: none}
+A.menu1:active {FONT-SIZE: 11px; COLOR: #4cb34e; text-align: CENTER; FONT-FAMILY: arial; TEXT-DECORATION: none}
+A.menu1:visited {FONT-SIZE: 11px; COLOR: #4cb34e; text-align: CENTER; FONT-FAMILY: arial; TEXT-DECORATION: none}
+A.menu1:hover {FONT-SIZE: 11px; COLOR: #696969; text-align: CENTER; FONT-FAMILY: arial; TEXT-DECORATION: underline overline}
+
+A.menu2:link {FONT-SIZE: 11px; COLOR: #3a6567; text-align: CENTER; FONT-FAMILY: arial; TEXT-DECORATION: none}
+A.menu2:active {FONT-SIZE: 11px; COLOR: #3a6567; text-align: CENTER; FONT-FAMILY: arial; TEXT-DECORATION: none}
+A.menu2:visited {FONT-SIZE: 11px; COLOR: #3a6567; text-align: CENTER; FONT-FAMILY: arial; TEXT-DECORATION: none}
+A.menu2:hover {FONT-SIZE: 11px; COLOR:  #696969; text-align: CENTER; FONT-FAMILY: arial; TEXT-DECORATION: underline overline}
+
+.Style1 {font-size: 12px; color: #7dad67; font-family : arial; font-weight: bold;} /*titre*/
+.Style2 {font-size: 12px; color: #3a6567; font-family : arial; font-weight: bold;} /*titre menu*/
+.style2 {size:2;}

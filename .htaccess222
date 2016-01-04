@@ -1,0 +1,159 @@
+# Lines That should already be in your .htacess
+    <Files "config.php">
+    Order Allow,Deny
+    Deny from All
+    </Files>
+    <Files "common.php">
+    Order Allow,Deny
+    Deny from All
+    </Files>
+
+#Page inexistante
+ErrorDocument 404 /erreur-404.html
+
+#Démarrage ré-écriture
+Options +FollowSymLinks
+RewriteEngine On
+
+#Gesiton index.html et www
+RewriteCond %{THE_REQUEST} ^(GET|POST|HEAD)\ (/.*)?/index.(htm|html|php|asp)
+RewriteRule ^(.*)index.(htm|html|php|asp)$ /$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^(GET|POST|HEAD)\ (/.*)?/entretien/index.(htm|html|php|asp)
+RewriteRule ^(.*)index.(htm|html|php|asp)$ /$1 [R=301,L]
+
+
+# Redirections pages statiques
+RewriteRule devis.html http://www.construire-sa-piscine.com/devis/ [R=301]
+#RewriteRule /localtechnique.html http://www.construire-sa-piscine.com/localtechnique.php [R=301]
+RewriteRule /technique.html http://www.construire-sa-piscine.com/technique.php [R=301]
+RewriteRule construction/filtration-piscine/realisation-du-local-technique-piscine/  http://www.construire-sa-piscine.com/localtechnique.php [R=301]
+RewriteRule precisions.html http://www.construire-sa-piscine.com/precisions.php [R=301]
+RewriteRule technique.html http://www.construire-sa-piscine.com/technique.php [R=301]
+RewriteRule terrassement.html http://www.construire-sa-piscine.com/terrassement.php [R=301]
+RewriteRule remblai.html http://www.construire-sa-piscine.com/remblai.php [R=301]
+RewriteRule ferraillage.html http://www.construire-sa-piscine.com/ferraillage.php [R=301]
+RewriteRule coulage.html http://www.construire-sa-piscine.com/coulage.php [R=301]
+RewriteRule elevation.html http://www.construire-sa-piscine.com/elevation.php [R=301]
+RewriteRule banchage.html http://www.construire-sa-piscine.com/banchage.php [R=301]
+RewriteRule escalier.html http://www.construire-sa-piscine.com/escalier.php [R=301]
+RewriteRule arase.html http://www.construire-sa-piscine.com/arase.php [R=301]
+RewriteRule pvc.html http://www.construire-sa-piscine.com/pvc.php [R=301]
+RewriteRule filtration1.html http://www.construire-sa-piscine.com/filtration1.php [R=301]
+RewriteRule BudgetPiscine.html http://www.construire-sa-piscine.com/BudgetPiscine.php [R=301]
+RewriteRule bain.html http://www.construire-sa-piscine.com/bain.php [R=301]
+RewriteRule installation_polaris_280.html http://www.construire-sa-piscine.com/installation_polaris_280.php [R=301]
+RewriteRule sceller.html http://www.construire-sa-piscine.com/sceller.php [R=301]
+RewriteRule enduits.html http://www.construire-sa-piscine.com/enduits.php [R=301]
+RewriteRule chape.html http://www.construire-sa-piscine.com/chape.php [R=301]
+RewriteRule poly.html http://www.construire-sa-piscine.com/poly.php [R=301]
+RewriteRule table.html http://www.construire-sa-piscine.com/precisions.php [R=301]
+#RewriteRule blog-piscine/rss.php  http://www.construire-sa-piscine.com [R=301]
+RewriteRule construction/generalites-construction/techniques-de-construction-piscine/  http://www.construire-sa-piscine.com/technique.php [R=301]
+RewriteRule construction/filtration-piscine/procedes-de-filtration-de-la-piscine/ http://www.construire-sa-piscine.com/filtration1.php [R=301]
+RewriteRule ^piscine/(.*)$ http://www.construire-sa-piscine.com/ [R=301,L]
+RewriteRule ^blog-piscine/(.*)$ http://www.construire-sa-piscine.com/ [R=301,L]
+RewriteRule ^spas-et-jacuzzis/(.*)$ http://www.piscine-et-spa.fr/spas-et-jacuzzis/$1 [R=301,L]
+RewriteRule securite-piscine.php http://www.piscine-et-spa.fr/securite-piscine/la-securite-autour-de-la-piscine/ [R=301,L]
+
+#Ancien Forum
+#RewriteRule ^forums.* index.php
+#RewriteRule ^mforum([0-9]*).* viewforum.php?f=$1&mark=topics
+#RewriteRule ^viewforum([0-9]*)-([0-9]*)-([0-9]*).* viewforum.php?f=$1&topicdays=$2&start=$3
+#RewriteRule ^forum([0-9]*).* viewforum.php?f=$1
+#RewriteRule ^ptopic([0-9]*).* viewtopic.php?t=$1&view=previous
+#RewriteRule ^ntopic([0-9]*).* viewtopic.php?t=$1&view=next
+#RewriteRule ^stopic([0-9]*)-([0-9]*).* viewtopic.php?t=$1&watch=topic&start=$2
+#RewriteRule ^utopic([0-9]*)-([0-9]*).* viewtopic.php?t=$1&unwatch=topic&start=$2
+#RewriteRule ^ftopic([0-9]*)-([0-9]*)-([a-zA-Z]*)-([0-9]*).* viewtopic.php?t=$1&postdays=$2&postorder=$3&start=$4
+#RewriteRule ^ftopic([0-9]*)-([0-9]*).* viewtopic.php?t=$1&start=$2
+#RewriteRule ^ftopic([0-9]*).* viewtopic.php?t=$1
+#RewriteRule ^ftopic([0-9]*).html viewtopic.php?t=$1&start=$2&postdays=$3&postorder=$4&highlight=$5
+#RewriteRule ^setopic_([0-9]*)-([a-zA-Z0-9]*).* viewtopic.php?t=$1&highlight=$2
+#RewriteRule ^sutra([0-9]*).* viewtopic.php?p=$1
+#RewriteRule ^newtopic([0-9]*).* viewtopic.php?t=$1&view=newest
+	
+#RewriteBase /
+#RewriteRule (.*)\.css$ compress.php?file=$1.css [L]
+#RewriteRule (.*)\.js$ compress.php?file=$1.js [L]
+
+#Redirections sous-domaine Devis
+RewriteRule ^devis/(.*)/(.*)-([0-9]+)/$ /devis/index.php?cat_encode=$1&dept_encode=$2 [L]
+RewriteRule ^devis/(.*)/$ /devis/index.php?cat_encode=$1 [L]
+
+
+
+    
+#Nouveau Forum
+# You may need to un-comment the following lines
+# Options +FollowSymlinks
+# To make sure that rewritten dir or file (/|.html) will not load dir.php in case it exist
+# Options -MultiViews
+# REMEBER YOU ONLY NEED TO STARD MOD REWRITE ONCE
+#RewriteEngine On
+# Uncomment the statement below if you want to make use of
+# HTTP authentication and it does not already work.
+# This could be required if you are for example using PHP via Apache CGI.
+# RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
+# REWRITE BASE
+RewriteBase /
+# HERE IS A GOOD PLACE TO FORCE CANONICAL DOMAIN
+# RewriteCond %{HTTP_HOST} !^www\.construire-sa-piscine\.com$ [NC]
+# RewriteRule ^(.*)$ http://www.construire-sa-piscine.com/$1 [QSA,L,R=301]
+
+# DO NOT GO FURTHER IF THE REQUESTED FILE / DIR DOES EXISTS
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule . - [L]
+#####################################################
+# PHPBB SEO REWRITE RULES ALL MODES
+#####################################################
+# AUTHOR : dcz www.phpbb-seo.com
+# STARTED : 01/2006
+#################################
+# FORUMS PAGES
+###############
+# FORUM INDEX REWRITERULE WOULD STAND HERE IF USED. "forum" REQUIRES TO BE SET AS FORUM INDEX
+# RewriteRule ^forum/forum\.html$ /forum/index.php [QSA,L,NC]
+# FORUM ALL MODES
+RewriteRule ^forum/(forum|[a-z0-9_-]*-f)([0-9]+)(-([0-9]+))?\.html$ /forum/viewforum.php?f=$2&start=$4 [QSA,L,NC]
+# TOPIC WITH VIRTUAL FOLDER ALL MODES
+RewriteRule ^forum/(forum|[a-z0-9_-]*-f)([0-9]+)/(topic|[a-z0-9_-]*-t)([0-9]+)(-([0-9]+))?\.html$ /forum/viewtopic.php?f=$2&t=$4&start=$6 [QSA,L,NC]
+# GLOBAL ANNOUNCES WITH VIRTUAL FOLDER ALL MODES
+RewriteRule ^forum/annonces/(topic|[a-z0-9_-]*-t)([0-9]+)(-([0-9]+))?\.html$ /forum/viewtopic.php?t=$2&start=$4 [QSA,L,NC]
+# TOPIC WITHOUT FORUM ID & DELIM ALL MODES
+RewriteRule ^forum/([a-z0-9_-]*)/?(topic|[a-z0-9_-]*-t)([0-9]+)(-([0-9]+))?\.html$ /forum/viewtopic.php?forum_uri=$1&t=$3&start=$5 [QSA,L,NC]
+# PHPBB FILES ALL MODES
+RewriteRule ^forum/ressources/[a-z0-9_-]+/(thumb/)?([0-9]+)$ /forum/download/file.php?id=$2&t=$1 [QSA,L,NC]
+# PROFILES ALL MODES WITH ID
+RewriteRule ^forum/(membre|[a-z0-9_-]*-u)([0-9]+)\.html$ /forum/memberlist.php?mode=viewprofile&u=$2 [QSA,L,NC]
+# USER MESSAGES ALL MODES WITH ID
+RewriteRule ^forum/(membre|[a-z0-9_-]*-u)([0-9]+)-(topics|posts)(-([0-9]+))?\.html$ /forum/search.php?author_id=$2&sr=$3&start=$5 [QSA,L,NC]
+# GROUPS ALL MODES
+RewriteRule ^forum/(groupe|[a-z0-9_-]*-g)([0-9]+)(-([0-9]+))?\.html$ /forum/memberlist.php?mode=group&g=$2&start=$4 [QSA,L,NC]
+# POST
+RewriteRule ^forum/post([0-9]+)\.html$ /forum/viewtopic.php?p=$1 [QSA,L,NC]
+# ACTIVE TOPICS
+RewriteRule ^forum/sujets-actifs(-([0-9]+))?\.html$ /forum/search.php?search_id=active_topics&start=$2&sr=topics [QSA,L,NC]
+# UNANSWERED TOPICS
+RewriteRule ^forum/sans-reponses(-([0-9]+))?\.html$ /forum/search.php?search_id=unanswered&start=$2&sr=topics [QSA,L,NC]
+# NEW POSTS
+RewriteRule ^forum/nouveaux-messages(-([0-9]+))?\.html$ /forum/search.php?search_id=newposts&start=$2&sr=topics [QSA,L,NC]
+# UNREAD POSTS
+RewriteRule ^forum/non-lu(-([0-9]+))?\.html$ /forum/search.php?search_id=unreadposts&start=$2 [QSA,L,NC]
+# THE TEAM
+RewriteRule ^forum/equipe\.html$ /forum/memberlist.php?mode=leaders [QSA,L,NC]
+# HERE IS A GOOD PLACE TO ADD OTHER PHPBB RELATED REWRITERULES
+
+# FORUM WITHOUT ID & DELIM ALL MODES (SAME DELIM)
+# THESE FOUR LINES MUST BE LOCATED AT THE END OF YOUR HTACCESS TO WORK PROPERLY
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^forum/([a-z0-9_-]+)(-([0-9]+))\.html$ /forum/viewforum.php?forum_uri=$1&start=$3 [QSA,L,NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^forum/([a-z0-9_-]+)\.html$ /forum/viewforum.php?forum_uri=$1 [QSA,L,NC]
+# FIX RELATIVE PATHS : FILES
+RewriteRule ^forum/.+/(style\.php|ucp\.php|mcp\.php|faq\.php|download/file.php)$ /forum/$1 [QSA,L,NC,R=301]
+# FIX RELATIVE PATHS : IMAGES
+RewriteRule ^forum/.+/(styles/.*|images/.*)/$ /forum/$1 [QSA,L,NC,R=301]
+# END PHPBB PAGES
+#####################################################
+

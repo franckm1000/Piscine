@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://www.construire-sa-piscine.com/sitemap.xml

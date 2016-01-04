@@ -1,0 +1,3 @@
+piscine:
+    resource: "@PiscineBundle/Resources/config/routing.yml"
+    prefix:   /
