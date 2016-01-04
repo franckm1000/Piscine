@@ -31,7 +31,7 @@ var ad6_url = 'http://fwl1ez5vbf.s.ad6media.fr/?d='+((new Date()).getTime())+'&r
 <div class="bloc_header_1">&nbsp;
 		  <?php include('header.php'); ?>
 	  </div>
-      test
+      
 
 		<div class="new_head">
         <div class="devis2">
